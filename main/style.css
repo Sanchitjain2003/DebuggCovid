@@ -12,7 +12,7 @@ body h1 {
 }
 
 body p {
-    margin-left: 200px;
+    text-align: center;
 }
 
 .btn {
@@ -36,22 +36,68 @@ button {
     padding-top: 50px;
 }
 
-.div1 {
-    background-color: #3CB7A1;
-    text-align: center;
+#div1 {
+    background-color: #2C3336;
+    width:30%;
+    height:500px;
+    overflow-y: scroll;
+    border:1px cyan solid;
 }
 
-.div3 {
-    background-color: #3CB7A1;
-    text-align: center;
+#div2 {
+    width:30%;
+    height:500px;
+    background-color: #2C3336;
+    overflow-y: scroll;
+    border:1px cyan solid;
+    
 }
 
 .chatbot {
     padding-left: 30px;
     padding-right: 30px;
 }
+#p1{
+    margin-left: 0;
+}
+#p31{
+    margin-left: 0;
+}
+#line-chart{
+    width:600px;
+    height:400px;
+
+}
+.realchatbot{
+    width:0px;
+    height:500px;
+    background-color: white;
+    z-index: 3;
+    right:10px;
+    position: fixed;
+    transition:0.5s;
+    top:200px;
+    overflow: hidden;
+    
+}
+
+.chatbutton{
+    right:30px;
+   bottom:15px;
+    position: fixed;
+    background-color: cyan;
+    border-radius: 10px;
+
+
+}
 
 @media screen and (max-width:547px) {
+    #div1{
+        width:100%;
+    }
+    #div2{
+        width:100%;
+    }
     .container {
         flex-direction: column;
     }
@@ -62,5 +108,10 @@ button {
     }
     body p {
         margin-left: 70px;
+    }
+    #line-chart{
+        width:100%;
+        
+        
     }
 }
