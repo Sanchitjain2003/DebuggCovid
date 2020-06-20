@@ -1,0 +1,66 @@
+body {
+    background-color: #2C3336;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+body h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    color: #3CB7A1;
+}
+
+body p {
+    margin-left: 200px;
+}
+
+.btn {
+    align-self: center;
+    text-align: center;
+}
+
+button {
+    align-self: center;
+    background-color: #3CB7A1;
+    height: 45px;
+    width: 160px;
+    border-radius: 25px;
+    color: white;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.div1 {
+    background-color: #3CB7A1;
+    text-align: center;
+}
+
+.div3 {
+    background-color: #3CB7A1;
+    text-align: center;
+}
+
+.chatbot {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width:547px) {
+    .container {
+        flex-direction: column;
+    }
+    .chatbot {
+        padding-left: 2px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    body p {
+        margin-left: 70px;
+    }
+}
