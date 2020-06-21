@@ -95,6 +95,11 @@ form {
 .other button {
     background-color: #2C3336;
 }
+.other button:hover{
+    background-color: white;
+    color: cyan;
+    curser: pointer;
+}
 .other{
     display:flex;
     flex-direction: row;
