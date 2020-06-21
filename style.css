@@ -222,5 +222,5 @@ footer {
     transition: transform .2s;
 }
 .mem-img:hover{
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
