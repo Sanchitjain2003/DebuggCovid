@@ -103,8 +103,8 @@ form {
    .cht-l h1{
         color:cyan;
     }
-    .cht-r{
-        padding-left:40px;
+    .butto{
+        background-color:#3CB7A1;
     }
     nav ul {
         flex-direction: row;
