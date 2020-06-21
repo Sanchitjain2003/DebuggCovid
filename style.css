@@ -97,7 +97,7 @@ form {
 }
 .other button:hover{
     background-color: white;
-    color: cyan;
+    color: #3CB7A1;
     curser: pointer;
 }
 .other{
