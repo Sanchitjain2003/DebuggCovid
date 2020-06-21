@@ -126,7 +126,8 @@ form {
         flex-direction: column;
     }
     .cht-b{
-        padding-left:20px;}
+        padding-left:40px;
+    padding-bottom:20px;}
 }
 footer {
     display: flex;
