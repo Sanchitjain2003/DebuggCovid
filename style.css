@@ -103,6 +103,9 @@ form {
    .cht-l h1{
         color:cyan;
     }
+    .cht-l{
+        padding-left:40px;
+    }
     .cht-r{
         padding-left:40px;
     }
