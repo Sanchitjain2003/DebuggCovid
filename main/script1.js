@@ -11,7 +11,7 @@ function getdatastate(state1)
             var para1=document.createElement("p");
             var para2 = document.createElement("p");
             var para3=document.createElement("p");
-            para.style.cssText='color:cyan;font-size:18px;margin-left:0%;padding:0px;text-decoration:underline;'
+            para.style.cssText='color:cyan;font-size:18px;margin-left:0%;padding:0px;'
             para1.style.cssText='color:white;font-size:15px;margin-left:5%;padding:0px;'
             para2.style.cssText='color:white;font-size:15px;margin-left:5%;padding:0px;'
             para3.style.cssText='color:white;font-size:15px;margin-left:5%;padding:0px;'
