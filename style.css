@@ -71,8 +71,9 @@ button {
     font-size: 40px;
     font-weight: 600;
 }
-side button:hover{
+.side button:hover{
     background-color: cyan;
+    cursor: pointer;
 }
 form {
     padding-top: 15px;
