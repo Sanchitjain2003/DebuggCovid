@@ -71,7 +71,7 @@ button {
     font-size: 40px;
     font-weight: 600;
 }
-.btn:hover{
+side button:hover{
     background-color: cyan;
 }
 form {
