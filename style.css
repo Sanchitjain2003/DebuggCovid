@@ -103,6 +103,9 @@ form {
    .cht-l h1{
         color:cyan;
     }
+    .chat-r{
+        padding-left:40px;
+    }
     nav ul {
         flex-direction: row;
     }
