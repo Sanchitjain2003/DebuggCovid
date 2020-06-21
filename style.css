@@ -98,8 +98,7 @@ form {
 }
 @media screen and (max-width:547px) {
     nav {
-        background-color: white;
-        color:#2C3336;
+        background-color: #2C3336;
     }
    .cht-l h1{
         color:cyan;
