@@ -4,15 +4,12 @@ body {
     color: white;
     font-family: 'Nunito', sans-serif;
 }
-
 nav {
     background-color: #3CB7A1;
 }
-
 nav a {
     text-decoration: none;
 }
-
 nav ul {
     display: flex;
     flex-direction: row;
@@ -20,7 +17,6 @@ nav ul {
     padding-bottom: 17px;
     padding-top: 17px;
 }
-
 nav li {
     list-style: none;
     padding-right: 30px;
@@ -32,36 +28,29 @@ nav li {
 .container {
     display: flex;
 }
-
 .main {
     padding-left: 25px;
     padding-top: 50px;
 }
-
 .main-head {
     font-weight: 600;
     font-size: 60px;
     color: cyan;
 }
-
 .main h4 {
     font-size: 25px;
 }
-
 .main li {
     line-height: 22px;
 }
-
 .box {
     margin-top: 120px;
     margin-left: 200px;
 }
-
 .box h4 {
     font-weight: 600;
     color: #3CB7A1;
 }
-
 button {
     background-color: #3CB7A1;
     height: 45px;
@@ -70,18 +59,15 @@ button {
     color: white;
     border: 0;
 }
-
 .btn-class {
     padding-top: 40px;
     padding-left: 200px;
     font-size: 40px;
     font-weight: 600;
 }
-
 form {
     padding-top: 15px;
 }
-
 @media screen and (max-width:547px) {
     nav {
         background-color: #2C3336;
