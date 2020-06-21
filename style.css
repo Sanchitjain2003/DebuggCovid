@@ -128,6 +128,8 @@ form {
     .cht-b{
         padding-left:40px;
     padding-bottom:20px;}
+    .side{
+        margin-top:30px;}
 }
 footer {
     display: flex;
