@@ -27,26 +27,76 @@
         center: [0, 30],
         zoom: 2
       })
-​      carto.setDefaultAuth({
+      carto.setDefaultAuth({
         username: 'sanchitjain2003',
         apiKey: 'e7d3185c007fd2db0f3723f3557412949d2d628d'
       })
-​      const viz = new carto.Viz(`
+      const viz = new carto.Viz(`
         width: blend(0,100,$deaths)
         @name: $name_of_state_ut
         @conf_cases: $total_confirmed_cases
-        
         color: ramp(viewportQuantiles($total_confirmed_cases, 5), OrYel)
         strokeWidth: 0
         resolution: 5
         filter: between($deaths, 0, 120)
-​      `);
+      `);
       const source = new carto.source.Dataset('complete');
       const layer = new carto.Layer('deaths',source, viz);
       layer.addTo(map);
       const interactivity = new carto.Interactivity(layer);
       interactivity.on('featureClick', featureEvent => {
-      alert("Name of State: " + featureEvent.features[0].variables.name.value)// + "\n" + "Total Number of confirmed Covid 19 cases: " + featureEvent.features[0].variables.conf_cases.value) // + "\n" + "Total Number of Confirmed Covid 19 cases: " featureEvent.features[0].variables.conf_cases.value)
-      });
+      alert("Name of State: " + featureEvent.features[0].variables.name.value + "\n" + "Total Number of confirmed Covid 19 cases: " + featureEvent.features[0].variables.conf_cases.value) // + "\n" + "Total Number of Confirmed Covid 19 cases: " featureEvent.features[0].variables.conf_cases.value)
+});
+    </script>
+  </html>
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>CARTO VL Example</title>
+      <!-- Load CARTO VL JS -->
+      <script src="https://libs.cartocdn.com/carto-vl/v1.2.4/carto-vl.min.js"></script>
+      <!-- Load Mapbox GL -->
+      <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.js"></script>
+      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.52.0/mapbox-gl.css" rel="stylesheet"/>
+      <!-- Load CARTO VL Styles -->
+      <link href="https://carto.com/developers/carto-vl/examples/maps/style.css" rel="stylesheet"/>
+      <style>
+        #map {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="map"></div>
+    </body>
+    <script>
+      const map = new mapboxgl.Map({
+        container: 'map',
+        style: carto.basemaps.voyager,
+        center: [0, 30],
+        zoom: 2
+      })
+      carto.setDefaultAuth({
+        username: 'sanchitjain2003',
+        apiKey: 'e7d3185c007fd2db0f3723f3557412949d2d628d'
+      })
+      const viz = new carto.Viz(`
+        width: blend(0,100,$deaths)
+        @name: $name_of_state_ut
+        @conf_cases: $total_confirmed_cases
+        color: ramp(viewportQuantiles($total_confirmed_cases, 5), OrYel)
+        strokeWidth: 0
+        resolution: 5
+        filter: between($deaths, 0, 120)
+      `);
+      const source = new carto.source.Dataset('complete');
+      const layer = new carto.Layer('deaths',source, viz);
+      layer.addTo(map);
+      const interactivity = new carto.Interactivity(layer);
+      interactivity.on('featureClick', featureEvent => {
+      alert("Name of State: " + featureEvent.features[0].variables.name.value + "\n" + "Total Number of confirmed Covid 19 cases: " + featureEvent.features[0].variables.conf_cases.value) // + "\n" + "Total Number of Confirmed Covid 19 cases: " featureEvent.features[0].variables.conf_cases.value)
+});
     </script>
   </html>
