@@ -108,7 +108,7 @@ form {
     }
     .other button{
         background-color: white;
-        clor: cyan;
+        color: cyan;
     }
     nav ul {
         flex-direction: row;
