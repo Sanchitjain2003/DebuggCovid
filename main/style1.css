@@ -10,15 +10,6 @@ body h1 {
     font-size: 40px;
     color: #3CB7A1;
 }
-body h3{
-    text-align:left;
-    margin-bottom:10px;
-}
-#slect-option{
-height:30px;
-    margin-bottom:10px;
-  
-}
 
 body p {
     text-align: center;
@@ -27,6 +18,15 @@ body p {
 .btn {
     align-self: center;
     text-align: center;
+}
+#slect-option{
+    
+    height:30px;
+    margin-bottom: 10px;
+}
+body h3{
+    text-align:left;
+    margin-bottom:10px;
 }
 
 button {
@@ -82,7 +82,7 @@ button {
     height:500px;
     background-color: white;
     z-index: 3;
-    right:10px;
+    right:20px;
     position: fixed;
     transition:0.5s;
     top:200px;
@@ -99,7 +99,15 @@ button {
 
 
 }
-
+.heatmap{
+    width:80%;
+    height:700px;
+    background-color: white;
+    margin:10%;
+}
+.footer{
+    justify-content: center;
+}
 @media screen and (max-width:547px) {
     #div1{
         width:100%;
@@ -122,6 +130,13 @@ button {
         width:100%;
         height:300px;
         
-        
-    }
+        }
+        .heatmap{
+            margin:3%;
+            width:94%;
+
+        }
+        .realchatbot{
+            right:10px;
+        }
 }
